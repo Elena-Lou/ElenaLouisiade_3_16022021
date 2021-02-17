@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(/fonts/Roboto-Regular.ttf);
+    src: local('Roboto-Regular'), url('/fonts/Roboto-Regular.ttf') format('truetype')
+    }
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(/fonts/Roboto-Bold.ttf);
+    src: local('Roboto-Bold'), url('/fonts/Roboto-Bold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(/fonts/Roboto-Thin.ttf);
+    src: local('Roboto-Thin'), url('/fonts/Roboto-Thin.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Shrikhand-Regular';
+    src: url(/fonts/Shrikhand-Regular.ttf);
+    src: local('Shrikhand-Regular'), url('/fonts/Shrikhand-Regular.ttf') format('truetype')
+}
+
+html {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+}
+
+footer h2 {
+    font-family: 'Shrikhand-Regular', Arial, Helvetica, sans-serif;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: black;
+    &:visited {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.menu__title--secondary {
+    font-family: 'Roboto-Thin', 'arial black';
+}
