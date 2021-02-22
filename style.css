@@ -1,0 +1,221 @@
+.btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #ffff;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 25px;
+  margin: auto;
+  font-size: 1em;
+}
+
+footer .bloc_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  margin: auto;
+  padding: 2%;
+  background-color: #353535;
+  color: #ffff;
+}
+footer .bloc_page h2 {
+  color: #ffff;
+}
+footer .bloc_page a {
+  color: #ffff;
+}
+
+footer ul, footer li {
+  width: auto;
+  margin: auto;
+}
+
+#logo {
+  width: 70%;
+  height: 65px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(fonts/Roboto-Regular.ttf);
+  src: local("Roboto-Regular"), url("fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(fonts/Roboto-Bold.ttf);
+  src: local("Roboto-Bold"), url("fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url(fonts/Roboto-Thin.ttf);
+  src: local("Roboto-Thin"), url("fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url(fonts/Shrikhand-Regular.ttf);
+  src: local("Shrikhand-Regular"), url("fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+html {
+  font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
+}
+
+footer h2 {
+  font-family: "Shrikhand-Regular", Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu__title--secondary {
+  font-family: "Roboto-Thin", "arial black";
+}
+
+/* CSS RESET */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+/* CSS RESET */
+input {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  border: solid #eaeaea;
+  background-color: #eaeaea;
+}
+
+.fa-map-marker-alt {
+  position: absolute;
+}
+
+.booking {
+  width: 100%;
+  height: 285px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: #f0f0f0;
+}
+.booking__title {
+  font-weight: bold;
+  font-size: 1.8em;
+}
+.booking__subtitle {
+  font-weight: lighter;
+}
+
+.howto {
+  width: 100%;
+  margin: 45px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.howto__title {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.howto__list {
+  width: 100%;
+  margin-top: 30px;
+}
+.howto__list__card {
+  border: solid #f0f0f0;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 4px 4px 6px lightgrey;
+  margin: 12px 12px;
+  height: 70px;
+}
+
+.restaurant {
+  width: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+.restaurant__card {
+  display: grid;
+  background-color: #ffff;
+  box-shadow: 4px 4px 6px lightgrey;
+  grid-template-rows: 150px 60px;
+  width: 100%;
+  margin: 16px auto;
+  border-radius: 12px;
+}
+.restaurant__card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-row: 1/3;
+  border-radius: 12px 12px 0px 0px;
+}
+.restaurant__card__tag {
+  position: absolute;
+  background-color: #99E2D0;
+  color: green;
+  right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
