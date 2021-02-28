@@ -150,9 +150,13 @@ form {
   background-color: #eaeaea;
 }
 
+footer {
+  width: 100%;
+  background-color: #353535;
+}
+
 .footer {
   padding: 20px;
-  background-color: #353535;
   color: #ffff;
 }
 .footer h3 {
@@ -177,6 +181,11 @@ form {
 }
 .footer li .fa-hands-helping {
   margin-right: 9px;
+}
+
+.bloc_page {
+  max-width: 1400px;
+  margin: auto;
 }
 
 .booking {
