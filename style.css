@@ -97,12 +97,16 @@ a:visited {
 }
 
 #logo {
-  width: 70%;
+  width: 90%;
   height: 60px;
   margin: auto;
   display: flex;
   align-items: center;
   padding: 0 5px;
+}
+#logo img {
+  max-height: 50px;
+  margin: auto;
 }
 
 .back__arrow {
@@ -113,6 +117,7 @@ a:visited {
 
 input {
   width: 50%;
+  max-width: 200px;
   height: 50px;
   text-align: center;
   font-size: large;
@@ -158,6 +163,12 @@ form {
 .footer a {
   color: #ffff;
 }
+@media all and (min-width: 768px) {
+  .footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .footer li {
   margin-bottom: 10px;
 }
@@ -197,6 +208,12 @@ form {
   margin: 15px;
   counter-reset: howtolist;
 }
+@media all and (min-width: 768px) {
+  .howto__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .howto__list__card {
   border-radius: 15px;
   box-shadow: 4px 4px 6px lightgrey;
@@ -205,8 +222,15 @@ form {
   display: flex;
   align-items: center;
   font-weight: bold;
-  border: solid #f0f0f0;
   background-color: #f0f0f0;
+}
+.howto__list__card:hover {
+  background-color: #f5daf3;
+}
+@media all and (min-width: 768px) {
+  .howto__list__card {
+    width: 33%;
+  }
 }
 .howto__list__card i {
   margin: 30px;
@@ -224,7 +248,6 @@ form {
   font-size: 0.8em;
   font-weight: 100;
 }
-
 .restaurant {
   width: 100%;
   background-color: #f0f0f0;
@@ -232,6 +255,17 @@ form {
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
+}
+@media all and (min-width: 768px) {
+  .restaurant__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (min-width: 1024px) {
+  .restaurant__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 .restaurant__card {
   display: grid;
@@ -301,7 +335,6 @@ article i {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  border: solid #ffff;
   background-color: #ffff;
   padding: 8px 0px;
 }
@@ -328,7 +361,9 @@ article i {
   padding-right: 10px;
 }
 .menu__card__checked {
-  display: none;
+  background-color: #99E2D0;
+  width: 0;
+  height: 100%;
 }
 
 .menu__title--secondary {
@@ -343,6 +378,17 @@ article i {
   margin: 5px 0;
 }
 
+@media all and (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media all and (min-width: 768px) {
+  .menu__secondary {
+    width: 32%;
+  }
+}
 .menu__list {
   margin-bottom: 40px;
 }
@@ -363,6 +409,10 @@ article i {
   color: #9356DC;
 }
 
+.fa-check-circle {
+  color: #ffff;
+}
+
 .btn {
   background: linear-gradient(#FF79DA, #9356DC);
   color: #ffff;
@@ -372,6 +422,10 @@ article i {
   margin: 14px auto;
   font-size: 1em;
   width: 55%;
+  max-width: 230px;
+}
+.btn:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
 }
 
 /*# sourceMappingURL=style.css.map */
