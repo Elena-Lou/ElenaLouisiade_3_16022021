@@ -298,7 +298,7 @@ form {
   border-radius: 3px;
 }
 
-article i {
+article svg {
   position: absolute;
   bottom: 20px;
   right: 15px;
@@ -413,6 +413,36 @@ article i {
   color: #ffff;
 }
 
+svg {
+  width: 30px;
+  stroke-dasharray: 1600;
+}
+svg path {
+  fill: transparent;
+  stroke-width: 30;
+  stroke: #FF79DA;
+}
+
+svg:hover path {
+  animation: animated-heart 0.4s linear forwards;
+}
+
+@keyframes animated-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1600;
+  }
+  80% {
+    stroke-dashoffset: 3200;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3200;
+    fill: #FF79DA;
+  }
+}
 .btn {
   background: linear-gradient(#FF79DA, #9356DC);
   color: #ffff;
