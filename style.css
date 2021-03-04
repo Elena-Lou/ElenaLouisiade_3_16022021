@@ -535,7 +535,6 @@ svg:hover path {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
   animation: loader 3s forwards;
 }
 
@@ -574,9 +573,11 @@ svg:hover path {
 @keyframes loader {
   0% {
     opacity: 1;
+    z-index: 999;
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 .btn {
