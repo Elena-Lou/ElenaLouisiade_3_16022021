@@ -1,3 +1,4 @@
+/*$color-btn-hover: lighten($color-btn, 10%);*/
 /* CSS RESET */
 html, body, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h5, h6 {
   margin: 0;
@@ -232,6 +233,7 @@ footer {
   align-items: center;
   font-weight: bold;
   background-color: #f0f0f0;
+  position: relative;
 }
 .howto__list__card:hover {
   background-color: #f5daf3;
@@ -250,13 +252,14 @@ footer {
   content: counter(howtolist);
   background-color: #9356DC;
   position: absolute;
-  left: 16px;
+  left: -9px;
   border-radius: 50%;
   padding: 5px 8px;
   color: #ffff;
   font-size: 0.8em;
   font-weight: 100;
 }
+
 .restaurant {
   width: 100%;
   background-color: #f0f0f0;
@@ -327,9 +330,6 @@ article svg {
   align-items: center;
   margin: 30px 30px 30px 0;
 }
-.pagemenu i {
-  font-size: 1.5em;
-}
 
 .image img {
   width: 100%;
@@ -343,12 +343,12 @@ article svg {
   height: 70px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   background-color: #ffff;
-  padding: 8px 0px;
+  overflow: hidden;
 }
 .menu__card__container {
-  width: 75%;
+  flex: 1 1 75%;
+  overflow: hidden;
 }
 .menu__card__title {
   overflow: hidden;
@@ -363,16 +363,17 @@ article svg {
 }
 .menu__card__price {
   font-weight: bold;
-  width: 20%;
   margin-left: auto;
   align-self: flex-end;
   text-align: end;
-  padding-right: 10px;
+  padding: 0 10px 10px 0;
+  flex: 1 1 25%;
 }
 .menu__card__checked {
   background-color: #99E2D0;
-  width: 0;
   height: 100%;
+  display: flex;
+  width: 0;
 }
 
 .menu__title--secondary {
@@ -402,29 +403,24 @@ article svg {
   margin-bottom: 40px;
 }
 
-.far.fa-heart {
-  font-size: 1.5em;
-  color: #FF79DA;
-  transition: font-weight 250ms;
-}
-.far.fa-heart:hover {
-  font-weight: 700;
+.howto__list__card:hover i {
+  color: #9356DC;
 }
 
-.fas.fa-mobile-alt, .fas.fa-list-ul, .fas.fa-store {
-  transition: color 250ms;
-}
-.fas.fa-mobile-alt:hover, .fas.fa-list-ul:hover, .fas.fa-store:hover {
-  color: #9356DC;
+li.menu__card:hover .menu__card__checked {
+  width: 100px;
 }
 
 .fa-check-circle {
   color: #ffff;
+  font-size: 1.5em;
+  margin: auto;
 }
 
 svg {
   width: 30px;
   stroke-dasharray: 1600;
+  cursor: pointer;
 }
 svg path {
   fill: transparent;
@@ -452,6 +448,88 @@ svg:hover path {
     fill: #FF79DA;
   }
 }
+.menu__card {
+  animation: fadein 0.9s ease-out both;
+}
+
+@keyframes fadein {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menu__card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.menu__card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.menu__card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.menu__card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.menu__card:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.menu__card:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.menu__card:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+.menu__card:nth-child(8) {
+  animation-delay: 1.6s;
+}
+
+.menu__card:nth-child(9) {
+  animation-delay: 1.8s;
+}
+
+.menu__card:nth-child(10) {
+  animation-delay: 2s;
+}
+
+/*
+#loader {
+ position : absolute;
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+}
+.loader__container {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+    &__items {
+  background-color: purple;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;  
+  }
+} */
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .btn {
   background: linear-gradient(#FF79DA, #9356DC);
   color: #ffff;
@@ -460,11 +538,13 @@ svg:hover path {
   border-radius: 25px;
   margin: 14px auto;
   font-size: 1em;
-  width: 55%;
+  width: 100%;
   max-width: 230px;
+  cursor: pointer;
+  transition: background-color;
 }
 .btn:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: #ff88de;
 }
 
 /*# sourceMappingURL=style.css.map */
