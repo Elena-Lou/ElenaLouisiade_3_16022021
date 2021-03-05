@@ -408,13 +408,19 @@ article svg {
 }
 
 li.menu__card:hover .menu__card__checked {
-  width: 100px;
+  width: 70px;
 }
 
 .fa-check-circle {
   color: #ffff;
   font-size: 1.5em;
   margin: auto;
+  margin-left: 70px;
+}
+
+li.menu__card:hover .fa-check-circle {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-50px) rotate(360deg);
 }
 
 svg {
@@ -435,9 +441,6 @@ svg:hover path {
 @keyframes animated-heart {
   0% {
     stroke-dashoffset: 0;
-  }
-  40% {
-    stroke-dashoffset: 1600;
   }
   80% {
     stroke-dashoffset: 3200;
@@ -502,29 +505,6 @@ svg:hover path {
   animation-delay: 2s;
 }
 
-/*
-#loader {
- position : absolute;
-  height: 100%;
-  width: 100%;
-  background-color: grey;
-  margin: 0;
-  padding: 0;
-  z-index: 999;
-}
-.loader__container {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-
-    &__items {
-  background-color: purple;
-  height: 40px;
-  width: 40px;
-  border-radius: 50px;  
-  }
-} */
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -576,7 +556,7 @@ svg:hover path {
     z-index: 999;
   }
   95% {
-    opacity: 0.75;
+    opacity: 0.9;
     z-index: 999;
   }
   100% {
