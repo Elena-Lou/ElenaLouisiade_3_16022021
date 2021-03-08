@@ -1,0 +1,34 @@
+  
+// useful tools variables reset mixins//
+@import "./1-utils/variables.scss";
+
+@import "./1-utils/reset.scss";
+
+@import "./1-utils/mixins.scss";
+
+
+//base and typography //
+
+@import "./2-base/base.scss";
+
+@import "./2-base/typography.scss";
+
+
+// layout header forms footer home restaurants //
+
+@import "./3-layout/header.scss";
+
+@import "./3-layout/forms.scss";
+
+@import "./3-layout/footer.scss";
+
+@import "./3-layout/home.scss";
+
+@import "./3-layout/restaurants.scss";
+
+
+// animations button //
+
+@import "./4-components/animations.scss";
+
+@import "./4-components/button.scss";

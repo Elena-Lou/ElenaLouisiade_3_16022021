@@ -1,0 +1,31 @@
+/* creation espace de formulaire pour possibilité future de choisir restaurant selon localisation */
+input {
+    width: 50%;
+    max-width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    background-color: #eaeaea;
+    @include ellipsis
+}
+
+label { visibility: hidden; }
+ 
+.fa-map-marker-alt {
+    top: 12px;
+    align-self: center;
+    font-size: 1.2em;
+    padding-bottom: 7px;
+}
+
+form {
+    display: flex;
+    justify-content: center;   
+}
+
+.location, form {
+    position: relative;
+    background-color: #eaeaea;
+}

@@ -1,0 +1,21 @@
+/* aspect des boutons */
+.btn {
+  background: $color-btn;
+  box-shadow: 4px 4px 6px lightgrey;
+  color: #ffff;
+  padding: 16px 0px;
+  border: none;
+  border-radius: 25px;
+  margin: 14px auto;
+  font-size: 1em;
+  width: 100%;
+  max-width: 230px;
+  cursor: pointer;
+
+  /* éclaircissement au survol et accentuation ombre */
+    &:hover {
+      opacity: 0.9;
+      box-shadow: 6px 6px 8px grey;
+    }
+  }
+

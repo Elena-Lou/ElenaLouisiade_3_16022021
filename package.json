@@ -1,0 +1,21 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "Projet 3 du parcours Développeur Web d'OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./style.css",
+    "prefix": "postcss ./style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elena-Lou/ElenaLouisiade_3_16022021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/Elena-Lou/ElenaLouisiade_3_16022021/issues"
+  },
+  "homepage": "https://github.com/Elena-Lou/ElenaLouisiade_3_16022021#readme"
+}

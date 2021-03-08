@@ -1,0 +1,18 @@
+// mixin aspect des cartes : accueil (fonctionnement) et restaurants (plats du menu) 
+@mixin card {
+    
+      border-radius: 15px;
+      box-shadow: 4px 4px 6px lightgrey;
+      margin: 10px 10px;
+      height: 70px;
+      display: flex; 
+      align-items: center;    
+}
+
+// mixin disparition texte avec ellipse
+@mixin ellipsis {
+      
+      overflow: hidden;
+      white-space: nowrap;    
+      text-overflow: ellipsis;
+}

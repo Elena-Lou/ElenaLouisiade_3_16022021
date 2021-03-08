@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content="Commande de repas en ligne"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script
-      src="https://kit.fontawesome.com/7798f2e0f1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7798f2e0f1.js" crossorigin="anonymous"></script> 
 
     <link rel="stylesheet" media="all" href="style.css" />
 
@@ -35,6 +34,7 @@
   </head>
 
   <body>
+    <!-- loader avec trois éléments -->
     <div class="loader">
       <div class="loader__item"></div>
       <div class="loader__item"></div>
@@ -42,27 +42,29 @@
     </div>
 
     <div class="bloc_page">
-      <header>
+      <!-- header avec logo -->
+      <header> 
         <div id="logo">
           <img src="images/logo.png" alt="Logo OhMyFood" />
         </div>
       </header>
-      <section id="intro">
-        <div class="location">
+      <!-- explications fonctionnement du site -->
+      <section class="intro">
+        <!-- formulaire de recherche selon localisation -->
+        <div class="location"> 
           <form method="post" action="#">
             <label for="search"></label><i class="fas fa-map-marker-alt"></i>
             <input
               type="search" name="search" id="search" placeholder="Paris, Belleville" />
           </form>
         </div>
-
+        <!-- description du site -->
         <div class="booking">
           <h1 class="booking__title">Réservez le menu qui vous convient</h1>
-          <p class="booking__subtitle">
-            Découvrez des restaurants d'exception, sélectionnés par nos soins
-          </p>
+          <p class="booking__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
           <button class="btn">Explorez nos restaurants</button>
         </div>
+        <!--mode d'emploi -->
         <div class="howto">
           <h2 class="howto__title">Fonctionnement</h2>
           <ul class="howto__list">
@@ -77,26 +79,25 @@
       </section>
 
       <section class="restaurant">
+        <!-- liste des restaurants disponibles à la réservation -->
         <h2>Restaurants</h2>
         <div class="restaurant__list">
-          <a href="menu_palette.html">
+          <a href="menu_palette.html"> <!-- lien vers restaurant la palette du goût -->
             <article class="restaurant__card">
               <img class="restaurant__card__img" src="images/palette_du_gout.jpg" alt="restaurant La palette du goût"/>
               <div class="restaurant__card__text">
                 <h3 class="restaurant__card__title">La palette du goût</h3>
                 <p class="restaurant__card__description">Ménilmontant</p>
               </div>
-              <svg
-                aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="-15 10 710 550">
+              <!-- icone format svg pour animation de remplissage dynamique -->
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-15 10 710 550">
                 <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
               </svg>
-
-              <p class="restaurant__card__tag">Nouveau</p>
+              <p class="restaurant__card__tag">Nouveau</p> <!-- tag nouveau position absolue sur photo -->
             </article>
           </a>
 
-          <a href="menu_enchantee.html">
+          <a href="menu_enchantee.html"> <!-- lien vers restaurant la note enchantée -->
             <article class="restaurant__card">
               <img
                 class="restaurant__card__img" src="images/note_enchantee.jpg" alt="restaurant La note enchantée" />
@@ -104,58 +105,37 @@
                 <h3 class="restaurant__card__title">La note enchantée</h3>
                 <p class="restaurant__card__description">Charonne</p>
               </div>
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="heart"
-                class="svg-inline--fa fa-heart fa-w-16"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="-15 10 710 550">
+              <!-- icone format svg pour animation de remplissage dynamique -->
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-15 10 710 550">
                 <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
               </svg>
-              <p class="restaurant__card__tag">Nouveau</p>
+              <p class="restaurant__card__tag">Nouveau</p> <!-- tag nouveau position absolue sur photo -->
             </article>
           </a>
 
-          <a href="menu_francaise.html">
+          <a href="menu_francaise.html"> <!-- lien vers restaurant à la française -->
             <article class="restaurant__card">
               <img class="restaurant__card__img" src="images/a_la_francaise.jpg" alt="restaurant A la française"/>
               <div class="restaurant__card__text">
                 <h3 class="restaurant__card__title">A la française</h3>
                 <p class="restaurant__card__description">Cité Rouge</p>
               </div>
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="heart"
-                class="svg-inline--fa fa-heart fa-w-16"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="-15 10 710 550">
+              <!-- icone format svg pour animation de remplissage dynamique -->
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-15 10 710 550">
                 <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
               </svg>
             </article>
           </a>
 
-          <a href="menu_delice.html">
+          <a href="menu_delice.html"> <!-- lien vers restaurant le délice des sens -->
             <article class="restaurant__card">
               <img class="restaurant__card__img" src="images/delice_sens.jpg" alt="restaurant Le délice des sens"/>
               <div class="restaurant__card__text">
                 <h3 class="restaurant__card__title">Le délice des sens</h3>
                 <p class="restaurant__card__description">Folie-Méricourt</p>
               </div>
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="heart"
-                class="svg-inline--fa fa-heart fa-w-16"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="-15 10 710 550">
+              <!-- icone format svg pour animation de remplissage dynamique -->
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-15 10 710 550">
                 <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
               </svg>
             </article>
@@ -165,14 +145,14 @@
     </div>
     <footer>
       <!-- pied de page -->
-      <div class="bloc_page">
+      <div class="bloc_page"> <!-- maintien centré du contenu du footer au-delà de 1400px  -->
         <div class="footer">
           <h3>ohmyfood</h3>
           <ul>
             <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
             <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
             <li>Mentions légales</li>
-            <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+            <li><a href="mailto:contact@ohmyfood.com">Contact</a></li> <!-- ouverture email pour contacter entreprise-->
           </ul>
         </div>
       </div>

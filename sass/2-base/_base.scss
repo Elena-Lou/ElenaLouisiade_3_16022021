@@ -1,0 +1,9 @@
+/* limitation de la largeur du contenu */ 
+.bloc_page {
+  max-width: 1400px;
+  margin: auto;
+}
+
+img { object-fit: cover; }
+
+h2, h3, h4, p { margin: 0 0 0 10px; }
