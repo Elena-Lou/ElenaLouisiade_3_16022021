@@ -11,11 +11,16 @@
   background-color: #f0f0f0;
 
   &__title {
-    font-weight: bold;
-    }
+    font-family:'Roboto-Bold';
+    font-size: 1.7em;
+    width: 70%;
+    margin: 0 auto;
+  }
 
   &__subtitle {
-    font-weight: lighter;
+    font-family:'Roboto-Thin';
+    font-size: 1.3em;
+    font-weight: 600;
   }
 }
 

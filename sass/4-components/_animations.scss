@@ -27,7 +27,7 @@ svg {
   & path {
     fill: transparent;
     stroke-width: 30;
-    stroke: $color-secondary;
+    stroke: black;
   }
 }
 
@@ -42,14 +42,16 @@ svg:hover path {
   80% {
     stroke-dashoffset: 3200;
     fill: transparent;
+    stroke: $color-secondary
   }
   100% {
     stroke-dashoffset: 3200;
     fill: $color-secondary;
+    stroke: $color-secondary
   }
 }
 
-
+/* affichage progressif des cards du menu */
 .menu__card {
   animation: fadein 0.9s ease-out both;
 }
@@ -107,6 +109,12 @@ svg:hover path {
   }
 }
 }
+/* fondu du loader avant chargement complet de la page */
+@keyframes loader {
+  0% {opacity: 1;z-index: 999;}
+  95% {opacity: 1; z-index: 999}
+  100% {opacity: 0; z-index: -1;}
+}
 
 /* animation des éléments du loader */
 @keyframes loader-item {
@@ -116,12 +124,6 @@ svg:hover path {
 }
 
 
-/* fondu du loader avant chargement complet de la page */
-@keyframes loader {
-  0% {opacity: 1;z-index: 999;}
-  95% {opacity: 1; z-index: 999}
-  100% {opacity: 0; z-index: -1;}
-}
 
 
 

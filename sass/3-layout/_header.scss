@@ -4,7 +4,7 @@ header {
 }
 
 #logo {
-    width: 50%;
+    width: 80%;
     height: 60px;
     margin: auto;
     display: flex;
@@ -12,7 +12,7 @@ header {
     padding: 0 5px;
 
     & img {
-        max-height: 50px;
+        max-height: 35px;
         margin: auto;
     }
 }
